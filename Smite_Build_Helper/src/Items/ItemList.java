@@ -270,4 +270,78 @@ public class ItemList{
             .setPassive( "Enemies hit by your damaging abilites take an additional 20 Physical Damage" +
                     "+ 15% of your Physical Power over 2s." )
             .createItem();
+
+    // Item: Morningstar
+    public static final Item Morningstar = new ItemBuilder()
+            .setCategory( "Offensive" )
+            .setTier( 1 )
+            .setPhysicalPower( 10 )
+            .setManaPer5( 5 )
+            .setCost( 600 )
+            .createItem();
+
+    // Item: Charged Morningstar
+    public static final Item ChargedMorningstar = new ItemBuilder()
+            .setCategory( "Offensive" )
+            .setTier( 2 )
+            .setPhysicalPower( 20 )
+            .setMana( 150 )
+            .setManaPer5( 7 )
+            .setCost( 600 )
+            .createItem();
+
+    // Item: Hydra's Star
+    public static final Item HydrasStar = new ItemBuilder()
+            .setCategory( "Offensive" )
+            .setTier( 3 )
+            .setPhysicalPower( 20 )
+            .setCooldownReduction( 5 )
+            .setManaPer5( 7 )
+            .setCost( 600 )
+            .setPassive( "PASSIVE - For 8 seconds after using an ability, your next basic attack " +
+                    "will deal an additional 10% damage. The effect can only occur every 3 seconds." )
+            .createItem();
+
+    // Item: Transcendence
+    public static final Item Transcendence = new ItemBuilder()
+            .setCategory( "Offensive" )
+            .setTier( 3 )
+            .setPhysicalPower( 35 )
+            .setMana( 300 )
+            .setManaPer5( 10 )
+            .setCooldownReduction( 10 )
+            .setCost( 1400 )
+            .setPassive( "PASSIVE - You permanently gain 15 Mana per Stack, and receive 5 Stacks for " +
+                    "a god kill, and 1 Stack for a minion kill (max. 50 stacks). Additionally, 3% of your" +
+                    " Mana is converted to Physical Power." )
+            .createItem();
+
+    // Item: Hydra's Lament
+    public static final Item HydrasLament = new ItemBuilder()
+            .setCategory( "Offensive" )
+            .setTier( 3 )
+            .setPhysicalPower( 40 )
+            .setCooldownReduction( 10 )
+            .setManaPer5( 10 )
+            .setCost( 950 )
+            .setPassive( "PASSIVE - For 8s after using an ability, your next Basic Attack will deal an " +
+                    "additional 50% damage. Abilities that function like basic attacks do not benefit from" +
+                    " this. PASSIVE - This item grants 2.5 MP5 per 10% of your missing Mana." )
+            .createItem();
+
+    // Item: Heartseeker
+    public static final Item Heartseeker = new ItemBuilder()
+            .setCategory( "Offensive" )
+            .setTier( 3 )
+            .setPhysicalPower( 75 )
+            .setPhysicalPenetration( 10 )
+            .setMana( 200 )
+            .setManaPer5( 20 )
+            .setCost( 1900 )
+            .setPassive( "PASSIVE - Your abilities deal an additional 3% of the targets maximum Health " +
+                    "as Physical Damage. If you have over 200 Physical Power, your ability bonus damage " +
+                    "scales up. This effect reaches a maximum of 6% Maximum Health damage at 400 Physical Power." )
+            .createItem();
+
+
 }
