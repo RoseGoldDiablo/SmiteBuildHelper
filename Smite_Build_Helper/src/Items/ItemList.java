@@ -343,5 +343,17 @@ public class ItemList{
                     "scales up. This effect reaches a maximum of 6% Maximum Health damage at 400 Physical Power." )
             .createItem();
 
+    // Item: Vampiric Shroud
+    public static final Item VampiricShroud = new ItemBuilder()
+            .setCategory( "Offensive" )
+            .setTier( 1 )
+            .setMagicalPower( 20 )
+            .setHealth( 100 )
+            .setPhysicalProtection( 10 )
+            .setCost( 800 )
+            .setPassive( "PASSIVE - Damaging any enemies with an ability gives you bonus 6 health and" +
+                    " 3 mana. Can only trigger once per target per ability." )
+            .createItem();
+
 
 }
