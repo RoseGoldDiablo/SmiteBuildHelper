@@ -343,17 +343,164 @@ public class ItemList{
                     "scales up. This effect reaches a maximum of 6% Maximum Health damage at 400 Physical Power." )
             .createItem();
 
-    // Item: Vampiric Shroud
-    public static final Item VampiricShroud = new ItemBuilder()
-            .setCategory( "Offensive" )
+    // Item: Magic Acorn
+    public static final Item MagicAcorn = new ItemBuilder()
+            .setCategory( "Utility" )
             .setTier( 1 )
-            .setMagicalPower( 20 )
-            .setHealth( 100 )
-            .setPhysicalProtection( 10 )
-            .setCost( 800 )
-            .setPassive( "PASSIVE - Damaging any enemies with an ability gives you bonus 6 health and" +
-                    " 3 mana. Can only trigger once per target per ability." )
+            .setMovementSpeed( 8 )
+            .setCost( 0 )
+            .setPassive( "This item can be upgraded from anywhere and replaces Boots for Ratatoskr" )
             .createItem();
+
+    // Item: Acorn of Swiftness
+    public static final Item AcornOfSwiftness = new ItemBuilder()
+            .setCategory( "Utility" )
+            .setTier( 2 )
+            .setPhysicalPower( 10 )
+            .setMovementSpeed( 10 )
+            .setCost( 700 )
+            .createItem();
+
+    // Item: Acorn of Yggdrasil
+    public static final Item AcornOfYggdrasil = new ItemBuilder()
+            .setCategory( "Utility" )
+            .setTier( 3 )
+            .setPhysicalPower( 50 )
+            .setMovementSpeed( 20 )
+            .setCost( 900 )
+            .setPassive( "PASSIVE - Any time Ratatoskr uses an ability that successfully hits any target," +
+                    "he is healed." )
+            .createItem();
+
+    // Item: Boots
+    public static final Item Boots = new ItemBuilder()
+            .setCategory( "Utility" )
+            .setTier( 1 )
+            .setMovementSpeed( 6 )
+            .setCost( 500 )
+            .createItem();
+
+    // Item: Combat Boots
+    public static final Item CombatBoots = new ItemBuilder()
+            .setCategory( "Utility" )
+            .setTier( 2 )
+            .setPhysicalPower( 10 )
+            .setMovementSpeed( 12 )
+            .setCost( 400 )
+            .createItem();
+
+    // Item: Warrior Tabi
+    public static final Item WarriorTabi = new ItemBuilder()
+            .setCategory( "Utility" )
+            .setTier( 3 )
+            .setPhysicalPower( 40 )
+            .setMovementSpeed( 18 )
+            .setCost( 700 )
+            .createItem();
+
+    // Item: Ninja Tabi
+    public static final Item NinjaTabi = new ItemBuilder()
+            .setCategory( "Utility" )
+            .setTier( 3 )
+            .setPhysicalPower( 20 )
+            .setMana( 100 )
+            .setAttackSpeed( 25 )
+            .setMovementSpeed( 18 )
+            .setCost( 650 )
+            .createItem();
+
+    // Item: Reinforced Greaves
+    public static final Item ReinforcedGreaves = new ItemBuilder()
+            .setCategory( "Utility" )
+            .setTier( 3 )
+            .setPhysicalPower( 10 )
+            .setHealth( 100 )
+            .setCCReduction( 20 )
+            .setMovementSpeed( 18 )
+            .setCost( 650 )
+            .setPassive( "PASSIVE - Every tine you are damaged by god you gain a stack that provides" +
+                    "3 Physical and Magical Protections. Stack up to 7 times, Lasts 6s" )
+            .createItem();
+
+    // Item: Talaria Boots
+    public static final Item TalariaBoots = new ItemBuilder()
+            .setCategory( "Utility" )
+            .setTier( 3 )
+            .setPhysicalPower( 15 )
+            .setManaPer5( 15 )
+            .setMovementSpeed( 25 )
+            .setCost( 700 )
+            .setPassive( "PASSIVE - You gain +20% additional Movement Speed after leaving the Fountain." +
+                    " This effect lasts 7s." )
+            .createItem();
+
+    // Item: Mask
+    public static final Item Mask = new ItemBuilder()
+            .setCategory( "Utility" )
+            .setTier( 1 )
+            .setHealth( 50 )
+            .setMana( 50 )
+            .setCost( 500 )
+            .createItem();
+
+    // Item: Fighter's Mask
+    public static final Item FightersMask = new ItemBuilder()
+            .setCategory( "Utility" )
+            .setTier( 2 )
+            .setPhysicalPower( 30 )
+            .setMagicalPower( 60 )
+            .setCost( 700 )
+            .setPassive( "PASSIVE - Only can be bought by Warriors, Guardians." )
+            .createItem();
+
+    // Item: Rangda's Mask
+    public static final Item RandgasMask = new ItemBuilder()
+            .setCategory( "Utility" )
+            .setTier( 3 )
+            .setPhysicalPower( 60 )
+            .setMagicalPower( 100 )
+            .setCost( 1300 )
+            .setPassive( "PASSIVE - GAIN DAMAGE, SACRIFICE DEFENSE. Only can be bought by Warriors" +
+                    ", Guardians +20% Damage Dealt +25 Damage Taken")
+            .createItem();
+
+    // Item: Messenger's Mask
+    public static final Item MessengersMask = new ItemBuilder()
+            .setCategory( "Utility" )
+            .setTier( 2 )
+            .setPhysicalPower( 10 )
+            .setMagicalPower( 20 )
+            .setMovementSpeed( 10 )
+            .setCooldownReduction( 10 )
+            .setCost( 700 )
+            .createItem();
+
+    // Item: Bumba's Mask
+    public static final Item BumbasMask = new ItemBuilder()
+            .setCategory( "Utility" )
+            .setTier( 3 )
+            .setPhysicalPower( 30 )
+            .setMagicalPower( 65 )
+            .setCooldownReduction( 10 )
+            .setMovementSpeed( 35 )
+            .setCost( 1300 )
+            .setPassive( "PASSIVE - GAIN MOBILITY, SACRIFICE DEFENSE & DAMAGE +15% Damage Taken -15%" +
+                    "Damage Dealt" )
+            .createItem();
+
+    // Item: Protector's Mask
+    public static final Item ProtectorsMask = new ItemBuilder()
+            .setCategory( "Utility" )
+            .setTier( 2 )
+            .setHealth( 50 )
+            .setPhysicalProtection( 15 )
+            .setMagicalProtection( 15 )
+            .setCCReduction( 10 )
+            .setCost( 700 )
+            .setPassive( "PASSIVE - Only cann be bought by Mages, Hunters, and Assassins" )
+            .createItem();
+
+
 
 
 }
